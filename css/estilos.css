@@ -1,0 +1,117 @@
+@font-face {
+  font-family: DancingScript-Regular;
+  src: url(../fuentes/DancingScript-Regular.ttf);
+}
+
+body{
+  background-color:#02010a;
+}
+
+header {
+  font-family: DancingScript-Regular;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  width: 900px;
+  margin: 0 auto;
+  padding: 1px;
+}
+
+header>h1{
+  text-shadow: 2px 2px #02010a;
+}
+
+#menu-principal{
+  float:right;
+  margin-top:-40px;
+}
+
+#menu-principal>a{
+  text-decoration: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+#menu-principal>a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+#contenido {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#div_primario {
+  width:900px;
+  height:320px;
+  line-height:320px;
+  margin:0px auto;
+  text-align:center;
+  background-color:#82c3a6;
+}
+
+#div_secundario div{
+  width: 50%;
+  background-color: #d5c75f;
+}
+
+#div_secundario div {
+  float: left;
+}
+
+#imagen_1{
+   vertical-align:middle;
+   border-right:1px solid black;
+   border-bottom:1px solid black;
+}
+
+.img_desc{
+  width: 370px;
+  height: 280px;
+  border-right:1px solid black;
+  border-bottom:1px solid black;
+  vertical-align: middle;
+  margin: 5px
+}
+
+figure{
+  font-family: DancingScript-Regular;
+  src: url(../fuentes/DancingScript-Regular.ttf);
+  text-align: center;
+  text-color:black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#fig_1 img:hover{
+	transform: rotateZ(10deg);
+  box-shadow: 2px 2px 5px #82c3a6;
+  border-right:1px solid black;
+  border-bottom:1px solid black;
+}
+
+#fig_2 img:hover{
+
+	transform: translate(10px,-5px);
+  box-shadow: 2px 2px 5px #82c3a6;
+  border-right:1px solid black;
+  border-bottom:1px solid black;
+}
+
+footer{
+  width: 900px;
+  height: 150px;
+  margin: 0 auto;
+  background-color: #C6d5c5;
+  clear: both;
+  position: relative;
+  border-radius: 0px 0px 10px 10px;
+  font-family: DancingScript-Regular;
+  src: url(../fuentes/DancingScript-Regular.ttf);
+}
+footer div div{
+  float: left;
+  margin-left: 40px;
+}
