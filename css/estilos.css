@@ -16,6 +16,19 @@ header{
   display: flex;
   flex-flow:row;
   vertical-align: middle;
+  animation: efecto-cargue 1s;
+
+}
+@-webkit-keyframes efecto-cargue{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
 .div-titulo{
   width: 80%;
