@@ -10,84 +10,93 @@
   </head>
 
   <body>
-    <header>
-      <h1>Comenzando con la Fotografía</h1>
-      <navbar id="menu-principal">
-        <a href="index.html">Inicio</a>
-        <a href="html/paisajes.html">Paisajes</a>
-        <a href="retratos.html">Retratos</a>
-      </navbar>
-    </header>
-    <section id="contenido">
+    <div class="contenido">
+      <header>
 
-      <div id="div_primario">
-            <img src="images/img_imagen_1.jpg" id="imagen_1">
+          <div class="div-titulo">
+            <h1>Comenzando con la Fotografía</h1>
+          </div>
+          <div class="div-menu">
+            <navbar id="menu-principal">
+               <a href="index.html">Inicio</a>
+               <a href="html/paisajes.html">Paisajes</a>
+               <a href="html/retratos.html">Retratos</a>
+            </navbar>
+          </div>
+
+      </header>
+      <div class="div-general">
+
+
+
+        <div class="div_primario">
+              <img src="images/img_imagen_1.jpg" class="imagen_1">
+        </div>
+        <div class="div_secundario">
+          <div id="div_interno_1">
+            <figure id="fig_1">
+              <a href="html/paisajes.html"><img src="images/img_imagen_2.jpg" class="img_desc"/></a>
+              <figcaption>Paisajes</figcaption>
+            </figure>
+          </div>
+
+          <div id="div_interno_2">
+
+            <figure id="fig_2">
+              <a href="html/retratos.html"><img src="images/img_imagen_3.jpg" class="img_desc"/></a>
+              <figcaption>Retratos</figcaption>
+            </figure>
+
+          </div>
+        </div>
       </div>
-      <div id="div_secundario">
+      <footer>
+        <div id="foot-contenido">
+          <div id="foot-contacto">
+              <h1>Contacto</h1>
+                <h3>
+                infofotografia.com <br>
+                Calle 5 kra 3 <br>
+                Teléfono 1231123123
+              </h3>
+          </div>
+          <div id="foot-trminos">
 
-        <div id="div_interno_1">
-          <figure id="fig_1">
-        		<!--<img src="images/img_imagen_2.jpg" class="img_desc">-->
-            <a href="html/paisajes.html"><img src="images/img_imagen_2.jpg" class="img_desc"/></a>
-        		<figcaption>Paisajes</figcaption>
-        	</figure>
-        </div>
+              <h1>Términos</h1>
+                <h3>
+                  Conoce nuestros servicios y <br>
+                  condiciones
+                </h3>
 
-        <div id="div_interno_2">
+          </div>
+          <div id="foot-redes">
 
-          <figure id="fig_2">
-            <!--<img src="images/img_imagen_3.jpg" class="img_desc"> -->
-            <a href="html/retratos.html"><img src="images/img_imagen_3.jpg" class="img_desc"/></a>
-        		<figcaption>Retratos</figcaption>
-        	</figure>
-
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div id="foot-contenido">
-        <div id="foot-contacto">
-          <p>
-            <h1>Contacto</h1>
+              <h1>Redes sociales</h1>
               <h3>
-              infofotografia.com <br>
-              Calle 5 kra 3 <br>
-              Teléfono 1231123123
-            </h3>
-          </p>
-        </div>
-        <div id="foot-trminos">
+                Comparte nuestras redes <br>
+                <img src="images/img_imagen_facebook.jpg" class="img_redes" alt="">
 
-            <h1>Términos</h1>
-              <h3>
-                Conoce nuestros servicios y <br>
-                condiciones
+                Comenzando fotografia<br>
+                <img src="images/img_imagen_twitter.jpg" class="img_redes" alt="">
+
+                @ComenzandoFotografia
               </h3>
 
+          </div>
+          <div id="foot-derechs">
+
+              <h1>Derechos</h1>
+                 <h3>
+                   Copy right - 2020
+                 </h3>
+
+          </div>
         </div>
-        <div id="foot-redes">
+      </footer>
 
-            <h1>Redes sociales</h1>
-            <h3>
-              Comparte nuestras redes <br>
-              <img src="images/img_imagen_facebook.jpg" class="img_redes" alt="">
 
-              Comenzando fotografia<br>
-              <img src="images/img_imagen_twitter.jpg" class="img_redes" alt="">
 
-              @ComenzandoFotografia
-            </h3>
+    </div>
 
-        </div>
-        <div id="foot-derechs">
-
-            <h1>Derechos</h1>
-               <h3>
-                 Copy right - 2020
-               </h3>
-
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

@@ -6,103 +6,168 @@
 body{
   background-color:#02010a;
 }
-
-header {
+header{
   font-family: DancingScript-Regular;
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
   color: white;
-  width: 900px;
+  width: 100%;
   margin: 0 auto;
-  padding: 1px;
+  display: flex;
+  flex-flow:row;
+  vertical-align: middle;
 }
-
-header>h1{
+.div-titulo{
+  width: 80%;
+  order: 1;
+}
+.div-menu{
+  width: 20%;
+  margin-top: 30px;
+  order: 2;
+}
+.div-titulo h1{
   text-shadow: 2px 2px #02010a;
+  font-family: DancingScript-Regular;
 }
-
-#menu-principal{
-  float:right;
-  margin-top:-40px;
-}
-
 #menu-principal>a{
   text-decoration: none;
   color: white;
-  padding: 0;
-  margin: 0;
 }
-
 #menu-principal>a:hover {
   text-decoration: underline;
   color: red;
 }
-
-#contenido {
+.contenido {
   width: 900px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
-
-#div_primario {
-  width:900px;
-  height:320px;
-  line-height:320px;
-  margin:0px auto;
-  text-align:center;
+.div_primario {
+  width:100%;
   background-color:#82c3a6;
+  text-align:center;
+  vertical-align: middle;
 }
 
-#div_secundario div{
-  width: 50%;
+.div_secundario{
+  margin: 0 auto;
+  display: flex;
+  flex-flow:wrap-reverse;
   background-color: #d5c75f;
 }
-
-#div_secundario div {
-  float: left;
+.div_secundario div{
+  width: 50%;
 }
-
-#imagen_1{
-   vertical-align:middle;
-   border-right:1px solid black;
-   border-bottom:1px solid black;
+.imagen_1{
+  width: 85%;
+  margin: 20px;
 }
-
 .img_desc{
-  width: 370px;
-  height: 280px;
-  border-right:1px solid black;
-  border-bottom:1px solid black;
-  vertical-align: middle;
-  margin: 5px
+  width: 80%;
+  height: 70%;
+  margin: 20px;
 }
-
+.div_primario img, .div_secundario div img{
+  border-right:2px solid black;
+  border-bottom:2px solid black;
+}
 figure{
   font-family: DancingScript-Regular;
   src: url(../fuentes/DancingScript-Regular.ttf);
   text-align: center;
   text-color:black;
+  width: 90%;
+  height: 100%;
+}
+figcaption{
   text-decoration: underline;
   font-weight: bold;
 }
-
 #fig_1 img:hover{
 	transform: rotateZ(10deg);
   box-shadow: 2px 2px 5px #82c3a6;
-  border-right:1px solid black;
+  border-right:2px solid black;
   border-bottom:1px solid black;
 }
-
 #fig_2 img:hover{
-
-	transform: translate(10px,-5px);
+	transform: translate(20px,-5px);
   box-shadow: 2px 2px 5px #82c3a6;
-  border-right:1px solid black;
-  border-bottom:1px solid black;
+  border-right:2px solid black;
+  border-bottom:2px solid black;
 }
+.galeria{
+  background-color: #d5c75f;
+  width: 100%;
+  text-align: center;
+  vertical-align:middle;
+  display: flex;
+  flex-flow:wrap;
+}
+.galeria div img{
+  width: 80%;
+  height: 80%;
+  margin-top: 20px;
+}
+.galeria [class*="img_"]{
+  min-height: 200px;
+  flex: 1 2 30%;
+}
+.img_1 {
+  -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+  filter: blur(10px);
+  order: 1;
+}
+.img_2 {
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+  order: 2;
+}
+.img_3{
+  -webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+  filter: sepia(90%);
+  order: 3;
+}
+.img_4 {
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+  order: 4;
+}
+.img_5 {
+  order: 5;
+}
+.img_6 {
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+  order: 6;
+}
+/*------------------------------------*/
+@media screen and (max-width:959px){
+  .contenido{
+    width: 100%;
+  }
+  .contenido div{
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    display: block;
+  }
+  header{
+    display: block;
+  }
+  .div_general{
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    display: block;
+  }
 
+  #foot-contenido div{
+    text-align: left;
+  }
+}
+/*-----------------------------------*/
 footer{
-  width: 900px;
-  height: 150px;
+  width: 100%;
   margin: 0 auto;
   background-color: #C6d5c5;
   clear: both;
@@ -110,13 +175,17 @@ footer{
   border-radius: 0px 0px 10px 10px;
   font-family: DancingScript-Regular;
   src: url(../fuentes/DancingScript-Regular.ttf);
+  line-height: 120%;
+}
+#foot-contenido {
+  margin: 0 auto;
+  display: flex;
+  flex-flow:wrap-reverse;
 }
 footer div div{
-  float: left;
   margin-left: 40px;
 }
 .img_redes{
   width: 20px;
-  height: 20px
-
+  height: 20px;
 }
